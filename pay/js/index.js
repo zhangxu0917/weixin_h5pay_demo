@@ -16,7 +16,7 @@ function callpay(){
 }
 
 function onBridgeReady(){
-	axios.get('/pay', (req, res) => {
-
+	axios.get('/pay', {}).then(res => {
+		console.log(res)
 	})
 }

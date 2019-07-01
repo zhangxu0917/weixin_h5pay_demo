@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/pay', (req, res) => {
-	return res.json(res.body);
+	return res.json(req.body);
 });
 
 app.listen(3000, () => {
